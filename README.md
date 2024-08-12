@@ -22,7 +22,9 @@ WHERE
 Para fazer análise do relatório no Looker  procurei verificar quais eram as delgacias que tinha maior incidência de crimes registrados , como : Estupro , Roubos , Lesões corporais , Latrocínios,Furtos. Por meio do Looker juntei e fiz agrupamento de funções como:
 
 Total de Roubos = sum(Roubos)+sum(Roubo_banco) +sum(Roubo_de_carga)+sum(Roubo_de_veiculos)
+
 Total_furtos = sum(Furtos_na_regiao)+sum(Furtos_de_veiculos)
+
 Total_lesao_corporal =sum(Lesao_corporal_culposa)+sum(Lesao_corporal_culposa_acidente_transito)+sum(Lesao_corporal_seguida_morte)+sum(Lesao_corporal_dolosa)
 
 E por fim criei uma filtragem a fim de classificar o nível de perigo registrados por Delegacia , aonde :
