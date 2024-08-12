@@ -37,8 +37,11 @@ Total_lesao_corporal =sum(Lesao_corporal_culposa)+sum(Lesao_corporal_culposa_aci
 E por fim criei uma filtragem a fim de classificar o nível de perigo registrados por Delegacia , aonde :
 
 Nível de perigo =  CASE
+
  WHEN Furtos_na_regiao>=3000  THEN "Regiao muito perigosa"
+ 
  ELSE 'Regiao perigosa'
+ 
 END
 
 Tinha notado que na base de crimes de SP a medida que a quantidade de furtos é maior de 3000 , consequentemente a quantidade de crimes é maior em outras modalidades também , como : Estupros , Roubos , Lesões corporais .
