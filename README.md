@@ -1,12 +1,12 @@
 # Terceiro-Projeto-de-Dados-Programa-Desenvolve-do-Grupo-Boticario
 
-Foi realizado uma análise sobre os  dados da base  de crimes em São Paulo do ano de 2019 e 2020 . O arquivo encontra-se  em anexo em formato CSV . Para uma análise mais detalhada sobre os crimes   ocorridos em São Paulo foi feito um upload da base de crimes no Big Query a fim de fazer tratamentos nas informações e gerar uma consulta . Posteriormente a consulta foi utilizada no Looker Studio , com o propósito de gerar uma visualização dos dados .
+📌Foi realizado uma análise sobre os  dados da base  de crimes em São Paulo do ano de 2019 e 2020 . O arquivo encontra-se  em anexo em formato CSV . Para uma análise mais detalhada sobre os crimes   ocorridos em São Paulo foi feito um upload da base de crimes no Big Query a fim de fazer tratamentos nas informações e gerar uma consulta . Posteriormente a consulta foi utilizada no Looker Studio , com o propósito de gerar uma visualização dos dados .
 
 ### Consulta feita no BigQuery 
 
 A consulta feita no Bigquery encontra-se em anexo . 
 
-No BigQuery eu subi cada uma das tabelas  que foram criadas . Priorizei o uso da tabela Crimes_SP, além disso subi uma consulta personalizada a fim de filtrar os Furtos na região com valores maiores que 1500 . Segue a consulta personalizada  que foi utilizada na análise :
+📌No BigQuery eu subi cada uma das tabelas  que foram criadas . Priorizei o uso da tabela Crimes_SP, além disso subi uma consulta personalizada a fim de filtrar os Furtos na região com valores maiores que 1500 . Segue a consulta personalizada  que foi utilizada na análise :
 
 SELECT *,
 
@@ -26,7 +26,7 @@ WHERE
 
 ## Looker Studio
 
-Para fazer análise do relatório no Looker  procurei verificar quais eram as delgacias que tinha maior incidência de crimes registrados , como : Estupro , Roubos , Lesões corporais , Latrocínios,Furtos. Por meio do Looker juntei e fiz agrupamento de funções como:
+📌Para fazer análise do relatório no Looker  procurei verificar quais eram as delgacias que tinha maior incidência de crimes registrados , como : Estupro , Roubos , Lesões corporais , Latrocínios,Furtos. Por meio do Looker juntei e fiz agrupamento de funções como:
 
 Total de Roubos = sum(Roubos)+sum(Roubo_banco) +sum(Roubo_de_carga)+sum(Roubo_de_veiculos)
 
@@ -44,7 +44,7 @@ Nível de perigo =  CASE
  
 END
 
-Tinha notado que na base de crimes de SP a medida que a quantidade de furtos é maior de 3000 , consequentemente a quantidade de crimes é maior em outras modalidades também , como : Estupros , Roubos , Lesões corporais .
+📌Tinha notado que na base de crimes de SP a medida que a quantidade de furtos é maior de 3000 , consequentemente a quantidade de crimes é maior em outras modalidades também , como : Estupros , Roubos , Lesões corporais .
 
 A visualização dos dados gerados no Looker Studio , encontra-se no link a seguir : https://lookerstudio.google.com/reporting/acc6b271-3107-4a53-b7ba-090dfc5adb84
 
