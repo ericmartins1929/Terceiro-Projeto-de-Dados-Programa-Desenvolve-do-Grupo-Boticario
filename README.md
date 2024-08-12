@@ -9,12 +9,19 @@ A consulta feita no Bigquery encontra-se em anexo .
 No BigQuery eu subi cada uma das tabelas  que foram criadas . Priorizei o uso da tabela Crimes_SP, além disso subi uma consulta personalizada a fim de filtrar os Furtos na região com valores maiores que 1500 . Segue a consulta personalizada  que foi utilizada na análise :
 
 SELECT *,
+
   SPLIT(Delegacia, ' - ')[SAFE_OFFSET(0)] AS Codigo_dp,
+  
   SPLIT(Delegacia, ' - ')[SAFE_OFFSET(1)] AS Nome_dp,
+  
   Estupro + Estrupo_vulneravel AS Total_Estupros
+  
 FROM
+
   `projeto-3-desenvolve.ProjetoDesenvolve3.Crimes_SP`
+  
 WHERE
+
    Furtos_na_regiao > 1500;
 
 ## Looker Studio
