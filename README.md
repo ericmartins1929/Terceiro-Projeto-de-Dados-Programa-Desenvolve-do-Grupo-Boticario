@@ -2,7 +2,7 @@
 
 📌Foi realizado uma análise sobre os  dados da base  de crimes em São Paulo do ano de 2019 e 2020 . O arquivo encontra-se  em anexo em formato CSV . Para uma análise mais detalhada sobre os crimes   ocorridos em São Paulo foi feito um upload da base de crimes no Big Query a fim de fazer tratamentos nas informações e gerar uma consulta . Posteriormente a consulta foi utilizada no Looker Studio , com o propósito de gerar uma visualização dos dados .
 
-### Consulta feita no BigQuery 
+## Consulta feita no BigQuery 
 
 A consulta feita no Bigquery encontra-se em anexo . 
 
